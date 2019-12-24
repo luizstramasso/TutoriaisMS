@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{105E3818-E6DE-46E8-88FA-361E9DF8F50F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{1729A186-2552-4499-A7DB-3C601005D4B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Service", "1 - Service", "{832B7BCD-B13F-4974-8C78-1AA4355174BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{48F88074-F05C-4E8B-B8AF-D22C1BF503AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{EC5DC7A2-0A51-4E2D-BE7E-15B545860B0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{1385B0F7-A048-437E-9D22-842775C76622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesMovie", "src\RazorPagesMovie\RazorPagesMovie.csproj", "{7992D5A9-5AF3-4504-A12B-095D7D7F80C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "src\ContosoUniversity\ContosoUniversity.csproj", "{63BE1635-32BE-49DB-82E6-058ABD1907C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7992D5A9-5AF3-4504-A12B-095D7D7F80C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7992D5A9-5AF3-4504-A12B-095D7D7F80C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7992D5A9-5AF3-4504-A12B-095D7D7F80C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7992D5A9-5AF3-4504-A12B-095D7D7F80C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63BE1635-32BE-49DB-82E6-058ABD1907C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63BE1635-32BE-49DB-82E6-058ABD1907C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63BE1635-32BE-49DB-82E6-058ABD1907C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63BE1635-32BE-49DB-82E6-058ABD1907C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1729A186-2552-4499-A7DB-3C601005D4B9} = {105E3818-E6DE-46E8-88FA-361E9DF8F50F}
+		{832B7BCD-B13F-4974-8C78-1AA4355174BB} = {105E3818-E6DE-46E8-88FA-361E9DF8F50F}
+		{48F88074-F05C-4E8B-B8AF-D22C1BF503AE} = {105E3818-E6DE-46E8-88FA-361E9DF8F50F}
+		{EC5DC7A2-0A51-4E2D-BE7E-15B545860B0E} = {105E3818-E6DE-46E8-88FA-361E9DF8F50F}
+		{1385B0F7-A048-437E-9D22-842775C76622} = {105E3818-E6DE-46E8-88FA-361E9DF8F50F}
+		{7992D5A9-5AF3-4504-A12B-095D7D7F80C2} = {1729A186-2552-4499-A7DB-3C601005D4B9}
+		{63BE1635-32BE-49DB-82E6-058ABD1907C0} = {1729A186-2552-4499-A7DB-3C601005D4B9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2861E304-C604-4DD8-B0B2-C961027569BB}
+	EndGlobalSection
+EndGlobal
