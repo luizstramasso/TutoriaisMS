@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ContosoUniversity.Data;
+using ContosoUniversity.Models;
+using ContosoUniversity.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using ContosoUniversity.Data;
-using ContosoUniversity.Models;
+using System.Threading.Tasks;
 
 namespace ContosoUniversity
 {
     public class CreateModel : PageModel
     {
-        private readonly ContosoUniversity.Data.SchoolContext _context;
+        private readonly SchoolContext _context;
 
-        public CreateModel(ContosoUniversity.Data.SchoolContext context)
+        public CreateModel(SchoolContext context)
         {
             _context = context;
         }
@@ -25,20 +22,18 @@ namespace ContosoUniversity
         }
 
         [BindProperty]
-        public Student Student { get; set; }
+        public StudentVM StudentVM { get; set; }
 
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
-            {
                 return Page();
-            }
 
-            _context.Students.Add(Student);
+            var entry = _context.Add(new Student());
+            entry.CurrentValues.SetValues(StudentVM);
             await _context.SaveChangesAsync();
-
             return RedirectToPage("./Index");
         }
     }

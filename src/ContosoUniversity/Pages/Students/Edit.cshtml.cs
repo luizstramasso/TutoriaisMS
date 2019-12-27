@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ContosoUniversity.Data;
+using ContosoUniversity.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using ContosoUniversity.Data;
-using ContosoUniversity.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ContosoUniversity
 {
     public class EditModel : PageModel
     {
-        private readonly ContosoUniversity.Data.SchoolContext _context;
+        private readonly SchoolContext _context;
 
-        public EditModel(ContosoUniversity.Data.SchoolContext context)
+        public EditModel(SchoolContext context)
         {
             _context = context;
         }
@@ -26,47 +22,35 @@ namespace ContosoUniversity
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
-            {
                 return NotFound();
-            }
 
-            Student = await _context.Students.FirstOrDefaultAsync(m => m.StudentID == id);
+            Student = await _context.Students.FindAsync(id);
 
             if (Student == null)
-            {
                 return NotFound();
-            }
+
             return Page();
         }
 
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(int id)
         {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
+            var studentToUpdate = await _context.Students.FindAsync(id);
 
-            _context.Attach(Student).State = EntityState.Modified;
+            if (studentToUpdate == null)
+                return NotFound();
 
-            try
+            if (await TryUpdateModelAsync<Student>(
+                studentToUpdate,
+                "student",
+                s => s.FirstMidName, s => s.LastName, studentToUpdate => studentToUpdate.EnrollmentDate))
             {
                 await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!StudentExists(Student.StudentID))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return RedirectToPage("./Index");
             }
 
-            return RedirectToPage("./Index");
+            return Page();
         }
 
         private bool StudentExists(int id)
