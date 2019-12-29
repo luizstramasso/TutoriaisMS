@@ -5,10 +5,10 @@
     ViewData["Title"] = "Students";
 }
 
-<h1>Index</h1>
+<h1>Student</h1>
 
 <p>
-    <a asp-page="Create">+ Student</a>
+    <a asp-page="Create" class="btn btn-primary">+ Student</a>
 </p>
 
 <form asp-page="./Index" method="get">
@@ -16,8 +16,8 @@
         <p>
             Find by name:
             <input type="text" name="SearchString" value="@Model.CurrentFilter" />
-            <input type="submit" value="Search" class="btn btn-primary" /> |
-            <a asp-page="./Index">Back to full List</a>
+            <input type="submit" value="Search" class="btn btn-primary" />
+            <a asp-page="./Index" class="btn btn-outline-primary">Back to full List</a>
         </p>
     </div>
 </form>
@@ -35,7 +35,7 @@
                 @Html.DisplayNameFor(model => model.Students[0].FirstMidName)
             </th>
             <th>
-                <a asp-page="./Index" asp--rout-sortOrder="@Model.DateSort"
+                <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort"
                    asp-route-currentFilter="@Model.CurrentFilter">
                     @Html.DisplayNameFor(model => model.Students[0].EnrollmentDate)
                 </a>
@@ -66,7 +66,7 @@
     </tbody>
 </table>
 
-@{ 
+@{
     var prevDisabled = !Model.Students.HasPreviousPage ? "disabled" : "";
     var nextDisabled = !Model.Students.HasNextPage ? "disabled" : "";
 }
@@ -75,13 +75,13 @@
    asp-route-sortOrder="@Model.CurrentSort"
    asp-route-pageIndex="@(Model.Students.PageIndex - 1)"
    asp-route-currentFilter="@Model.CurrentFilter"
-   class="btn btn-outline-primary @prevDisabled">
+   class="btn btn-primary @prevDisabled">
     Previous
 </a>
 <a asp-page="./Index"
    asp-route-sortOrder="@Model.CurrentSort"
    asp-route-pageIndex="@(Model.Students.PageIndex + 1)"
    asp-route-currentFilter="@Model.CurrentFilter"
-   class="btn btn-outline-primary @nextDisabled">
+   class="btn btn-primary @nextDisabled">
     Next
 </a>
