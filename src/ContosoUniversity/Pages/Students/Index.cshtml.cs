@@ -2,11 +2,10 @@
 using ContosoUniversity.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity
+namespace ContosoUniversity.Pages.Students
 {
     public class IndexModel : PageModel
     {

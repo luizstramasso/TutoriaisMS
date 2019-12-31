@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ContosoUniversity.Models
 {
@@ -24,7 +23,7 @@ namespace ContosoUniversity.Models
         [Display(Name = "Hire Date")]
         public DateTime HireDate { get; set; }
 
-        [Display(Name ="Full Name")]
+        [Display(Name = "Full Name")]
         public string FullName
         {
             get

@@ -1,39 +1,41 @@
-﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models;
-using ContosoUniversity.Models.ViewModels;
+﻿using ContosoUniversity.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Students
+namespace ContosoUniversity.Pages.Courses
 {
     public class CreateModel : PageModel
     {
-        private readonly SchoolContext _context;
+        private readonly ContosoUniversity.Data.SchoolContext _context;
 
-        public CreateModel(SchoolContext context)
+        public CreateModel(ContosoUniversity.Data.SchoolContext context)
         {
             _context = context;
         }
 
         public IActionResult OnGet()
         {
+            ViewData["DepartmentID"] = new SelectList(_context.Departments, "DepartmentID", "DepartmentID");
             return Page();
         }
 
         [BindProperty]
-        public StudentVM StudentVM { get; set; }
+        public Course Course { get; set; }
 
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
+            {
                 return Page();
+            }
 
-            var entry = _context.Add(new Student());
-            entry.CurrentValues.SetValues(StudentVM);
+            _context.Courses.Add(Course);
             await _context.SaveChangesAsync();
+
             return RedirectToPage("./Index");
         }
     }

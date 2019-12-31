@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ContosoUniversity.Models.ViewModels
 {
-    public class EnrollmentDateGroup
+    public class EnrollmentVM
     {
         [DataType(DataType.Date)]
         public DateTime? EnrollmentDate { get; set; }

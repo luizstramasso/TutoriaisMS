@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity
+namespace ContosoUniversity.Pages.Students
 {
     public class EditModel : PageModel
     {

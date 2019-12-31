@@ -17,13 +17,13 @@ namespace ContosoUniversity
             _context = context;
         }
 
-        public IList<EnrollmentDateGroup> Students { get; set; }
+        public IList<EnrollmentVM> Students { get; set; }
         public async Task OnGetAsync()
         {
-            IQueryable<EnrollmentDateGroup> data =
+            IQueryable<EnrollmentVM> data =
                 from student in _context.Students
                 group student by student.EnrollmentDate into dateGroup
-                select new EnrollmentDateGroup()
+                select new EnrollmentVM()
                 {
                     EnrollmentDate = dateGroup.Key,
                     StudentCount = dateGroup.Count()
