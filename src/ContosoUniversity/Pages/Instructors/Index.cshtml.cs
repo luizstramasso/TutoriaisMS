@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
-using ContosoUniversity.Data;
+﻿using ContosoUniversity.Data;
 using ContosoUniversity.Models;
 using ContosoUniversity.Models.ViewModels;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ContosoUniversity.Pages.Instructors
 {
@@ -53,9 +50,9 @@ namespace ContosoUniversity.Pages.Instructors
                 CourseID = courseID.Value;
                 var selectedCourse = InstructorVM.Courses
                     .Where(c => c.CourseID == courseID).Single();
-                
+
                 await _context.Entry(selectedCourse).Collection(e => e.Enrollments).LoadAsync();
-                
+
                 foreach (Enrollment enrollment in selectedCourse.Enrollments)
                 {
                     await _context.Entry(enrollment).Reference(s => s.Student).LoadAsync();

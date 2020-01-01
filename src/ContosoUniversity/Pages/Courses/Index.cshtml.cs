@@ -1,5 +1,4 @@
 ﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models;
 using ContosoUniversity.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
