@@ -15,9 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{1385B0F7-A048-437E-9D22-842775C76622}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesMovie", "src\RazorPagesMovie\RazorPagesMovie.csproj", "{7992D5A9-5AF3-4504-A12B-095D7D7F80C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesMovie", "src\RazorPagesMovie\RazorPagesMovie.csproj", "{7992D5A9-5AF3-4504-A12B-095D7D7F80C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "src\ContosoUniversity\ContosoUniversity.csproj", "{63BE1635-32BE-49DB-82E6-058ABD1907C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity", "src\ContosoUniversity\ContosoUniversity.csproj", "{63BE1635-32BE-49DB-82E6-058ABD1907C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMovie", "src\MvcMovie\MvcMovie.csproj", "{DE3776B5-24CF-4635-90A8-50297DF47150}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{63BE1635-32BE-49DB-82E6-058ABD1907C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63BE1635-32BE-49DB-82E6-058ABD1907C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63BE1635-32BE-49DB-82E6-058ABD1907C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE3776B5-24CF-4635-90A8-50297DF47150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE3776B5-24CF-4635-90A8-50297DF47150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE3776B5-24CF-4635-90A8-50297DF47150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE3776B5-24CF-4635-90A8-50297DF47150}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{1385B0F7-A048-437E-9D22-842775C76622} = {105E3818-E6DE-46E8-88FA-361E9DF8F50F}
 		{7992D5A9-5AF3-4504-A12B-095D7D7F80C2} = {1729A186-2552-4499-A7DB-3C601005D4B9}
 		{63BE1635-32BE-49DB-82E6-058ABD1907C0} = {1729A186-2552-4499-A7DB-3C601005D4B9}
+		{DE3776B5-24CF-4635-90A8-50297DF47150} = {1729A186-2552-4499-A7DB-3C601005D4B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2861E304-C604-4DD8-B0B2-C961027569BB}
