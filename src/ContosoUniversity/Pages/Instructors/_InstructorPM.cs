@@ -2,10 +2,8 @@
 using ContosoUniversity.Models;
 using ContosoUniversity.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace ContosoUniversity.Pages.Instructors
 {
