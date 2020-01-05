@@ -1,6 +1,4 @@
-using System;
-
-namespace MvcContosoUniversity.Models
+namespace MvcContosoUniversity.Models.ViewModels
 {
     public class ErrorViewModel
     {
