@@ -1,9 +1,9 @@
-﻿using ContosoUniversity.Models;
-using ContosoUniversity.Models.Enums;
+﻿using RazorPagesContosoUniversity.Models;
+using RazorPagesContosoUniversity.Models.Enums;
 using System;
 using System.Linq;
 
-namespace ContosoUniversity.Data
+namespace RazorPagesContosoUniversity.Data
 {
     public static class DbInitializer
     {

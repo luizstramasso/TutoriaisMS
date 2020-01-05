@@ -1,10 +1,10 @@
-﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using RazorPagesContosoUniversity.Data;
+using RazorPagesContosoUniversity.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Instructors
+namespace RazorPagesContosoUniversity.Pages.Instructors
 {
     public class CreateModel : _InstructorPM
     {

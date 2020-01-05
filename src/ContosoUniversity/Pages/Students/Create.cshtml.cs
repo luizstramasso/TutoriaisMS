@@ -1,11 +1,11 @@
-﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models;
-using ContosoUniversity.Models.ViewModels;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using RazorPagesContosoUniversity.Data;
+using RazorPagesContosoUniversity.Models;
+using RazorPagesContosoUniversity.Models.ViewModels;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Students
+namespace RazorPagesContosoUniversity.Pages.Students
 {
     public class CreateModel : PageModel
     {

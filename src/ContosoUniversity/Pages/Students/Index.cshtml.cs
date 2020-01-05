@@ -1,11 +1,11 @@
-﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using RazorPagesContosoUniversity.Data;
+using RazorPagesContosoUniversity.Models;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Students
+namespace RazorPagesContosoUniversity.Pages.Students
 {
     public class IndexModel : PageModel
     {

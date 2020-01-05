@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace ContosoUniversity.Pages
+namespace RazorPagesContosoUniversity.Pages
 {
     public class IndexModel : PageModel
     {

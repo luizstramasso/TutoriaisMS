@@ -1,4 +1,4 @@
-﻿namespace ContosoUniversity.Models.ViewModels
+﻿namespace RazorPagesContosoUniversity.Models.ViewModels
 {
     public class AssignmentVM
     {

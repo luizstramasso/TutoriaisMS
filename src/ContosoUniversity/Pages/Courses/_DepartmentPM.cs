@@ -1,10 +1,10 @@
-﻿using ContosoUniversity.Data;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using RazorPagesContosoUniversity.Data;
 using System.Linq;
 
-namespace ContosoUniversity.Pages.Courses
+namespace RazorPagesContosoUniversity.Pages.Courses
 {
     public class _DepartmentPM : PageModel
     {

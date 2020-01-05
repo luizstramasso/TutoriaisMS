@@ -1,12 +1,12 @@
-﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models;
-using ContosoUniversity.Models.ViewModels;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using RazorPagesContosoUniversity.Data;
+using RazorPagesContosoUniversity.Models;
+using RazorPagesContosoUniversity.Models.ViewModels;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Instructors
+namespace RazorPagesContosoUniversity.Pages.Instructors
 {
     public class IndexModel : PageModel
     {
@@ -29,11 +29,6 @@ namespace ContosoUniversity.Pages.Instructors
                 .Include(i => i.CourseAssignments)
                     .ThenInclude(c => c.Course)
                         .ThenInclude(d => d.Department)
-                //.Include(i => i.CourseAssignments)
-                //    .ThenInclude(c => c.Course)
-                //        .ThenInclude(e => e.Enrollments)
-                //            .ThenInclude(s => s.Student)
-                //.AsNoTracking()
                 .OrderBy(l => l.LastName)
                 .ToListAsync();
 

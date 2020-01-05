@@ -1,4 +1,4 @@
-﻿namespace ContosoUniversity.Models.Enums
+﻿namespace RazorPagesContosoUniversity.Models.Enums
 {
     public enum Grade
     {

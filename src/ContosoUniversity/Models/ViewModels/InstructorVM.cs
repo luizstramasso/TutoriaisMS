@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ContosoUniversity.Models.ViewModels
+namespace RazorPagesContosoUniversity.Models.ViewModels
 {
     public class InstructorVM
     {

@@ -1,13 +1,13 @@
-﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using RazorPagesContosoUniversity.Data;
+using RazorPagesContosoUniversity.Models;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Departments
+namespace RazorPagesContosoUniversity.Pages.Departments
 {
     public class EditModel : PageModel
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ContosoUniversity.Models.ViewModels
+namespace RazorPagesContosoUniversity.Models.ViewModels
 {
     public class EnrollmentVM
     {

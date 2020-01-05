@@ -1,11 +1,11 @@
-﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using RazorPagesContosoUniversity.Data;
+using RazorPagesContosoUniversity.Models;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Departments
+namespace RazorPagesContosoUniversity.Pages.Departments
 {
     public class DetailsModel : PageModel
     {

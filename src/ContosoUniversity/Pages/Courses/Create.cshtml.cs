@@ -1,9 +1,9 @@
-﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using RazorPagesContosoUniversity.Data;
+using RazorPagesContosoUniversity.Models;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Courses
+namespace RazorPagesContosoUniversity.Pages.Courses
 {
     public class CreateModel : _DepartmentPM
     {

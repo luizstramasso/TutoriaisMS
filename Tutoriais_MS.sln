@@ -15,11 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{1385B0F7-A048-437E-9D22-842775C76622}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMovie", "src\MvcMovie\MvcMovie.csproj", "{DE3776B5-24CF-4635-90A8-50297DF47150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcMovie", "src\MvcMovie\MvcMovie.csproj", "{DE3776B5-24CF-4635-90A8-50297DF47150}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesMovie", "src\RazorPagesMovie\RazorPagesMovie.csproj", "{1B579BE8-9D9E-4711-9355-693721A558B9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity", "src\ContosoUniversity\ContosoUniversity.csproj", "{57D325C6-6FD5-401C-AE19-5A7929B7ACA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesContosoUniversity", "src\ContosoUniversity\RazorPagesContosoUniversity.csproj", "{57D325C6-6FD5-401C-AE19-5A7929B7ACA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcContosoUniversity", "src\MvcContosoUniversity\MvcContosoUniversity.csproj", "{7C808B91-D143-46D7-B5ED-E5261C9301B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{57D325C6-6FD5-401C-AE19-5A7929B7ACA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57D325C6-6FD5-401C-AE19-5A7929B7ACA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57D325C6-6FD5-401C-AE19-5A7929B7ACA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C808B91-D143-46D7-B5ED-E5261C9301B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C808B91-D143-46D7-B5ED-E5261C9301B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C808B91-D143-46D7-B5ED-E5261C9301B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C808B91-D143-46D7-B5ED-E5261C9301B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{DE3776B5-24CF-4635-90A8-50297DF47150} = {1729A186-2552-4499-A7DB-3C601005D4B9}
 		{1B579BE8-9D9E-4711-9355-693721A558B9} = {1729A186-2552-4499-A7DB-3C601005D4B9}
 		{57D325C6-6FD5-401C-AE19-5A7929B7ACA9} = {1729A186-2552-4499-A7DB-3C601005D4B9}
+		{7C808B91-D143-46D7-B5ED-E5261C9301B8} = {1729A186-2552-4499-A7DB-3C601005D4B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2861E304-C604-4DD8-B0B2-C961027569BB}

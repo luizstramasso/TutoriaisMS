@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
-namespace ContosoUniversity.Migrations
+namespace RazorPagesContosoUniversity.Migrations
 {
     public partial class Nova : Migration
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ContosoUniversity.Migrations
+namespace RazorPagesContosoUniversity.Migrations
 {
     public partial class RowVersion : Migration
     {

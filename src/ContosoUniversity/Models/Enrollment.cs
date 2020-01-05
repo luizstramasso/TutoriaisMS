@@ -1,7 +1,7 @@
-﻿using ContosoUniversity.Models.Enums;
+﻿using RazorPagesContosoUniversity.Models.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace ContosoUniversity.Models
+namespace RazorPagesContosoUniversity.Models
 {
     public class Enrollment
     {

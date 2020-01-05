@@ -1,12 +1,12 @@
-﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models.ViewModels;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using RazorPagesContosoUniversity.Data;
+using RazorPagesContosoUniversity.Models.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity
+namespace RazorPagesContosoUniversity.Pages
 {
     public class AboutModel : PageModel
     {

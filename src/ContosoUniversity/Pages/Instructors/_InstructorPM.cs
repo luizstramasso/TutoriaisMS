@@ -1,11 +1,11 @@
-﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models;
-using ContosoUniversity.Models.ViewModels;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using RazorPagesContosoUniversity.Data;
+using RazorPagesContosoUniversity.Models;
+using RazorPagesContosoUniversity.Models.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ContosoUniversity.Pages.Instructors
+namespace RazorPagesContosoUniversity.Pages.Instructors
 {
     public class _InstructorPM : PageModel
     {
