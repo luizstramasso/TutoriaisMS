@@ -1,9 +1,7 @@
 ﻿using MvcContosoUniversity.Models;
 using MvcContosoUniversity.Models.Enums;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace MvcContosoUniversity.Data
 {
@@ -11,8 +9,6 @@ namespace MvcContosoUniversity.Data
     {
         public static void Initialize(SchoolContext context)
         {
-            context.Database.EnsureCreated();
-
             if (context.Students.Any())
             {
                 return;
